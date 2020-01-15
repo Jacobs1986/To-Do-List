@@ -22,10 +22,17 @@ $("#add-to-do").on("click", function(event) {
     // Give the button an id of listCount
     button.attr("id", `${listCount}`);
     // Give the button an attr of data-to-do listCount
+    button.attr("data-to-do", `${listCount}`);
     // Give the button a class of checkbox
+    button.addClass("checkbox");
     // Give the button a text of X
+    button.text("x");
     // Prepend the button to p
+    paragraph.prepend(button);
     // Add everything to the #toDoList
+    $("#to-do").append(paragraph);
     // Add to the listCount
+    listCount++
     // Clear the #to-do text box
+    $("#to-do").val("").focus();
 })
