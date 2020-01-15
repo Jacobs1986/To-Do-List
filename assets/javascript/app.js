@@ -36,3 +36,13 @@ $("#add-to-do").on("click", function(event) {
     // Clear the #to-do text box
     $("#to-do").val("").focus();
 })
+
+// Function to remove the button from the list
+$(document.body).on("click", ".checkbox", function () {
+    console.log(this);
+    // get the number from the data-to-do attr store it in a variable
+    let toDoNumber = $(this).attr("data-to-do");
+    console.log(toDoNumber);
+    // Empty the <p> element using the #Item-variable id
+    
+})
