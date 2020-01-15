@@ -44,5 +44,5 @@ $(document.body).on("click", ".checkbox", function () {
     let toDoNumber = $(this).attr("data-to-do");
     console.log(toDoNumber);
     // Empty the <p> element using the #Item-variable id
-    
+    $(`#Item-${toDoNumber}`).remove();
 })
