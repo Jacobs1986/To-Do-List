@@ -30,7 +30,7 @@ $("#add-to-do").on("click", function(event) {
     // Prepend the button to p
     paragraph.prepend(button);
     // Add everything to the #toDoList
-    $("#to-do").append(paragraph);
+    $("#toDoList").append(paragraph);
     // Add to the listCount
     listCount++
     // Clear the #to-do text box
