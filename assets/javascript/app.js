@@ -2,16 +2,16 @@
 
 // Initialize Firebase
 var firebaseConfig = {
-    apiKey: "AIzaSyBHOtv6T25h0nnUClZ5zUBoDl3Yh5wt_kg",
-    authDomain: "fir-demo-9f6b7.firebaseapp.com",
-    databaseURL: "https://fir-demo-9f6b7.firebaseio.com",
-    projectId: "fir-demo-9f6b7",
-    storageBucket: "fir-demo-9f6b7.appspot.com",
-    messagingSenderId: "491402112622",
-    appId: "1:491402112622:web:23f52a226ec9cb24dd007f"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+    apiKey: "AIzaSyCjxJr3u2T68TMUKk99v4Rr7wZbeiug0tA",
+    authDomain: "to-do-list-25176.firebaseapp.com",
+    databaseURL: "https://to-do-list-25176.firebaseio.com",
+    projectId: "to-do-list-25176",
+    storageBucket: "to-do-list-25176.appspot.com",
+    messagingSenderId: "1013406437671",
+    appId: "1:1013406437671:web:ed8ad1630f05a349129902"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 // variable for the database
 let database = firebase.database();
