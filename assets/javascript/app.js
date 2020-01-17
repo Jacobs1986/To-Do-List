@@ -1,21 +1,8 @@
 // I've decided that I want to try and save the information to Firebase rather than to local storage. I just want to see how I can get this to work.
-// Initialize Firebase
-var firebaseConfig = {
-    apiKey: "AIzaSyCjxJr3u2T68TMUKk99v4Rr7wZbeiug0tA",
-    authDomain: "to-do-list-25176.firebaseapp.com",
-    databaseURL: "https://to-do-list-25176.firebaseio.com",
-    projectId: "to-do-list-25176",
-    storageBucket: "to-do-list-25176.appspot.com",
-    messagingSenderId: "1013406437671",
-    appId: "1:1013406437671:web:ed8ad1630f05a349129902"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-// variable for the database
-let database = firebase.database();
 
 // Global variables
 let listCount = 1;
+let toDoArray = [];
 
 // function for the #add-to-do button
 $("#add-to-do").on("click", function(event) {
@@ -47,8 +34,11 @@ $("#add-to-do").on("click", function(event) {
     paragraph.prepend(button);
     // Add everything to the #toDoList
     $("#toDoList").append(paragraph);
-    // save to the database
-    
+    // push toDoItem to toDoArray
+    toDoArray.push(toDoItem)
+    console.log(toDoArray);
+    // save to localStorage
+    localStorage.setItem('list', JSON.stringify(toDoArray));
     // Add to the listCount
     listCount++
     // Clear the #to-do text box
