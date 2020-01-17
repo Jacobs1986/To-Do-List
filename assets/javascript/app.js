@@ -48,9 +48,7 @@ $("#add-to-do").on("click", function(event) {
     // Add everything to the #toDoList
     $("#toDoList").append(paragraph);
     // save to the database
-    database.ref().set({
-        listCount: toDoItem
-    })
+    
     // Add to the listCount
     listCount++
     // Clear the #to-do text box
