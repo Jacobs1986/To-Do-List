@@ -1,3 +1,21 @@
+// I've decided that I want to try and save the information to Firebase rather than to local storage. I just want to see how I can get this to work.
+
+// Initialize Firebase
+var firebaseConfig = {
+    apiKey: "AIzaSyBHOtv6T25h0nnUClZ5zUBoDl3Yh5wt_kg",
+    authDomain: "fir-demo-9f6b7.firebaseapp.com",
+    databaseURL: "https://fir-demo-9f6b7.firebaseio.com",
+    projectId: "fir-demo-9f6b7",
+    storageBucket: "fir-demo-9f6b7.appspot.com",
+    messagingSenderId: "491402112622",
+    appId: "1:491402112622:web:23f52a226ec9cb24dd007f"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// variable for the database
+let database = firebase.database();
+
 // Global variables
 let listCount = 1;
 
